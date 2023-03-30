@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    const person = {
+      name: "Yui",
+      age: 24
+    }
+    /* const p = new Proxy(person, {
+      // target: Proxy实例对象，propName：需要操作的属性名
+      get(target, propName){
+        return target[propName]
+      },
+      // value：修改或追加的属性值
+      set(target, propName, value){
+        target[propName] = value
+      },
+      deleteProperty(target, propName){
+        // 删除成功将返回一个布尔值true
+        return delete target[propName]
+      } 
+    })*/
+    // console.log(location);
+    window.onhashchange = (e) => {
+      console.log(e);
+    }
+  </script>
+</body>
+</html>
